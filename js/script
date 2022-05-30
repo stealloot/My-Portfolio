@@ -1,0 +1,15 @@
+        var mainMenu = document.querySelector('.links');
+        var closeMenu = document.querySelector('.close');
+        var openMenu = document.querySelector('.open');
+
+        openMenu.addEventListener('click', show);
+        closeMenu.addEventListener('click', close);
+
+        function close(){
+            mainMenu.style.top = '-110%'
+        }
+        function show(){
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+        }
+  
